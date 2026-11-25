@@ -144,6 +144,19 @@ project-card article {
     margin: 0;
 }
 
+cat-fact-panel {
+    --panel-background: var(--card-color, #ffffff);
+    --panel-text: var(--text-color, #333333);
+
+    display: block;
+    background-color: var(--panel-background, #ffffff);
+    color: var(--panel-text, #333333);
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+}
+
 a {
     color: var(--accent-color);
 }
@@ -331,6 +344,11 @@ fieldset {
         animation: none;
     }
 }
+
+cat-fact-panel button {
+        margin-right: 12px;
+        margin-bottom: 10px;
+    }
 
 @media (max-width: 600px) {
     header {

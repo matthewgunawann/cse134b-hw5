@@ -7,6 +7,8 @@
     <title>Matthew Gunawan | Projects</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/theme.js" defer></script>
+    <script src="js/cat-fact-panel.js" defer></script>
+    <script src="js/cat-fact-page.js" defer></script>
 </head>
 
 <body>
@@ -174,6 +176,25 @@
                 </article>
             </project-card>
 
+        </section>
+        
+        <section>
+            <h2>Cat Facts Web Component</h2>
+
+            <button id="fact-mode-toggle"
+                    type="button"
+                    aria-controls="portfolio-cat-facts"
+                    aria-pressed="false">
+                Use Compact View
+            </button>
+
+            <cat-fact-panel id="portfolio-cat-facts"></cat-fact-panel>
+
+            <noscript>
+                <p>
+                    Enable JavaScript to load live data for this widget.
+                </p>
+            </noscript>
         </section>
 
         <section>
